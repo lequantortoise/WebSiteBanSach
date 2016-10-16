@@ -54,9 +54,21 @@
     background-color:#14a19a;
 }
 #divHinhAnhTimKiem button:hover{
-    background-color gbra(0,0,0,.5);
+    background-color: rgba(0,0,0,.5);
 }
 #divHinhAnhTimKiem img{
     width:30px;
     height:30px;
+}
+#slider{
+    float:right;
+    width:700px;
+    height:350px;
+}
+#slider img{
+    width:700px;
+    height:350px;
+}
+#divMenuLeft{
+    float:left;
 }

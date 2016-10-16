@@ -12,6 +12,11 @@
     <link href="~/Content/NguoiDungCssLayout/screen.css" rel="stylesheet" />
     <link href="~/Content/NguoiDungCssLayout/NguoiDungCssLayout.css" rel="stylesheet" />
     <link href="~/Content/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    @*Chèn nivo slider*@
+    <link href="~/NivoSlider/nivo-slider.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/NivoSlider/jquery.nivo.slider.pack.js"></script>
+    <script src="~/NivoSlider/jquery.nivo.slider.js"></script>
 </head>
 <body>
     @RenderBody()
@@ -64,31 +69,41 @@
         </section>
 
         <section>
-            <div class="activity">
-                <h1 class="item-header">Recent Activity</h1>
+            <div id="divMenuLeft">
+                <div class="activity">
+                    <h1 class="item-header">Sách hay</h1>
 
-                <div class="activity-list-update">
-                    <img src="http://lorempixel.com/50/50/" alt="Image">
-                    <p><strong>Dennis The Dude</strong> updated his <a href="#">user profile</a>.</p>
-                    <div class="clear"></div>
+                    <div class="activity-list-update">
+                        <img src="http://lorempixel.com/50/50/" alt="Image">
+                        <p><strong>A Farewell to Arms</strong> updated his <a href="#">user profile</a>.</p>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="activity-list-update">
+                        <img src="http://lorempixel.com/50/50/" alt="Image">
+                        <p><strong>A Brief of History</strong> uploaded a new file <a href="#">new-design.png</a></p>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="activity-list-update">
+                        <img src="http://lorempixel.com/50/50/" alt="Image">
+                        <p><strong>Doraemon</strong> uploaded a new file <a href="#">new-design.png</a></p>
+                        <div class="clear"></div>
+                    </div>
+
+                    <a href="#" class="item-footer green">
+                        Sách mới
+                    </a>
                 </div>
-
-                <div class="activity-list-update">
-                    <img src="http://lorempixel.com/50/50/" alt="Image">
-                    <p><strong>Abe Kobo</strong> uploaded a new file <a href="#">new-design.png</a></p>
-                    <div class="clear"></div>
-                </div>
-
-                <div class="activity-list-update">
-                    <img src="http://lorempixel.com/50/50/" alt="Image">
-                    <p><strong>Abe Kobo</strong> uploaded a new file <a href="#">new-design.png</a></p>
-                    <div class="clear"></div>
-                </div>
-
-                <a href="#" class="item-footer green">
-                    See all activity
-                </a>
             </div>
+            @*Chèn div nivo slider*@
+            <div id="slider" class="nivoSlider">
+                <img src="~/Content/HinhAnh/book-07.jpg" />
+                <img src="~/Content/HinhAnh/huge.6.33646.png" />
+                <img src="~/Content/HinhAnh/images.jpg" />
+                <img src="~/Content/HinhAnh/miler-lagos-book-igloo.jpg" />
+            </div>
+            <div style="clear:both"></div>
         </section>
 
         <section>
@@ -139,5 +154,16 @@
             </div>
         </section>
     </div>
+    @*script chayj nivo slider*@
+        <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#slider').nivoSlider({
+                controlNav: false,
+                nextText: '',
+                prevText:''
+
+            });
+        });
+        </script>
 </body>
 </html>
