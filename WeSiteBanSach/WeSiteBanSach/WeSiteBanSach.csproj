@@ -213,6 +213,7 @@
     <Content Include="Content\fontawesome\css\font-awesome.css" />
     <Content Include="Content\fontawesome\css\font-awesome.min.css" />
     <Content Include="Content\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\HinhAnh\find32x32.png" />
     <Content Include="Content\NguoiDungCssLayout\fonts.css" />
     <Content Include="Content\NguoiDungCssLayout\NguoiDungCssLayout.css" />
     <Content Include="Content\NguoiDungCssLayout\screen.css" />

@@ -32,6 +32,16 @@
             </div>
 
             <div class="flash success" id="divDanhMuc">
+                @*Hộp thoại tìm kiếm*@
+                <div id="txtTimKiem">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.TextBox("txtTimKiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Tìm kiếm" })
+                        <div id="divHinhAnhTimKiem">
+                            <button type="submit"><img src="~/Content/HinhAnh/find32x32.png" /></button>
+                        </div>
+                    }
+                </div>
                 <ul class="navMenu">
                     <li>
                         <a href="#">Trang chủ</a>
