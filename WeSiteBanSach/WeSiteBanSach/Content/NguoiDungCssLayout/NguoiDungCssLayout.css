@@ -74,8 +74,12 @@
 }
 #divLeft{
     float:left;
+    width:30%;
+}
+#divLeft .item{
     width:100%;
 }
 #divRight{
     float:right;
+    width: 70%;
 }
