@@ -63,12 +63,19 @@
 #slider{
     float:right;
     width:700px;
-    height:350px;
+    height:340px;
 }
 #slider img{
     width:700px;
-    height:350px;
+    height:340px;
 }
 #divMenuLeft{
     float:left;
+}
+#divLeft{
+    float:left;
+    width:100%;
+}
+#divRight{
+    float:right;
 }

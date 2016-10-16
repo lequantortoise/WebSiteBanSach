@@ -19,7 +19,7 @@
     <script src="~/NivoSlider/jquery.nivo.slider.js"></script>
 </head>
 <body>
-    @RenderBody()
+    
     <div id="ToanTrang">
         <section class="blank">
             <div class="flash">
@@ -105,52 +105,38 @@
             </div>
             <div style="clear:both"></div>
         </section>
-
+        @*Div body*@
+        <div id="NoiDung">
+            @RenderBody()
+        </div>
         <section>
             <div>
-                <a href="#" class="button">This is a button</a>
-
-                <a href="#" class="button button-submit">This is a save button</a>
-
-                <a href="#" class="button">Button with a counter <span class="notification">22</span></a>
-
-                <a href="#" class="button button-and-icon">
-                    <div><i class="icon-large icon-cog"></i></div>Button with an icon
-                </a>
+                <a href="#" class="button">Tình yêu - Tình bạn</a>
+                <a href="#" class="button button-submit">Cha mẹ - Con</a>
+                <a href="#" class="button">Công nghệ - Đám mây</a>
+                <a href="#" class="button button-submit">Anime</a>
             </div>
-
-            <hr>
-
-            <div>
-                <a href="#" class="button button-submit">Submit</a>
-                <a href="#" class="button button-cancel">Cancel</a>
-                <a href="#" class="button button-delete">Delete</a>
-            </div>
-
-            <hr>
-
-            <div>
-                <a href="#" class="button button-small">Smaller button</a>
-            </div>
-
-            <hr>
-
-
         </section>
-
+        @*Div nhà xuất bản*@
         <section class="blank items">
-            <div class="item">
-                <img src="http://lorempixel.com/400/300/" alt="Image">
+            <div id="divLeft">
+                <div class="item">
+                    <img src="http://lorempixel.com/400/300/" alt="Image">
 
-                <div class="item-info">
-                    <h1>Item title</h1>
-                    <p>What the hell is this? Get out of town, I didn't know you did anything creative. Ah, let me read some.</p>
-                    <span class="price">£49.99</span>
-                    <a href="#" class="button button-buy">Get it now</a>
+                    <div class="item-info">
+                        <h1>Nhà xuất bản</h1>
+                        <div><a href="#">Kim Đồng</a></div>
+                        <div><a href="#">Kim Đồng</a></div>
+                        <div><a href="#">Kim Đồng</a></div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <a href="#" class="button button-buy">Buy button (full width for columns)</a>
+                <div id="divRight">
+                    @RenderSection("NoiDungBenPhai");
+                </div>
+                <div style="clear:both"></div>
+                <div>
+                    <a href="#" class="button button-buy">Chào các bạn đến với kho tri thức của nhân loại</a>
+                </div>
             </div>
         </section>
     </div>
