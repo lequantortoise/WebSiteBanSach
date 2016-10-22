@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WeSiteBanSach.Models;
 
 namespace WeSiteBanSach.Controllers
 {
     public class HomeController : Controller
     {
+        QuanLyBanSachEntities db = new QuanLyBanSachEntities();
         public ActionResult Index()
         {
-            return View();
+            return View(db.Saches.Where(s => s.Moi == 1).ToList());
         }
 
         public ActionResult About()

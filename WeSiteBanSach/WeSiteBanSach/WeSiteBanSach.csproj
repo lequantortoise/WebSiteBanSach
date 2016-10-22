@@ -274,6 +274,7 @@
     <Content Include="Content\NguoiDungCssLayout\fonts.css" />
     <Content Include="Content\NguoiDungCssLayout\NguoiDungCssLayout.css" />
     <Content Include="Content\NguoiDungCssLayout\screen.css" />
+    <Content Include="Content\NguoiDungCssLayout\TrangChuCss.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

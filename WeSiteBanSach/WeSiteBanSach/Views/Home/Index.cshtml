@@ -1,4 +1,8 @@
-﻿@{
+﻿@using WeSiteBanSach.Models;
+@model List<Sach>
+<link href="~/Content/NguoiDungCssLayout/TrangChuCss.css" rel="stylesheet" />
+
+@{
     Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
     ViewBag.Title = "Home Page";
 }
@@ -14,6 +18,26 @@
     </div>
     }
 
-This will make sure all the required files are loaded properly. 
-If you have the Nivo Slider CSS and Javascript files in a subfolder you will need to add it to the path. 
-Note that the Nivo Slider jQuery plugin requires jQuery v1.7+ to work.
+@*divBody trang index*@
+<div id="divBody">
+    @{  int i = 0;}
+    @foreach (var item in Model)
+    {
+        i++;
+        <div id="SanPham">
+            <div id="AnhBia">
+                <img src="@Url.Content("~/HinhAnhSP/"+item.AnhBia)" width="90" height="130" />
+            </div>
+            <div id="TenSach">
+                @item.TenSach
+            </div>
+            <div id="DonGia">
+                @item.GiaBan
+            </div>
+        </div>
+        if (i % 3 == 0)
+        {
+            <div style="clear:both"></div>
+        }
+    }
+</div>
