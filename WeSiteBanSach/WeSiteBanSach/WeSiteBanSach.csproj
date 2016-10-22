@@ -402,6 +402,8 @@
     <Content Include="Views\Sach\SachMoiPartial.cshtml" />
     <Content Include="Views\ChuDe\ChuDePartial.cshtml" />
     <Content Include="Views\NhaXuatBan\NhaXuatBanPartial.cshtml" />
+    <Content Include="Views\Sach\XemChiTiet.cshtml" />
+    <Content Include="Views\ChuDe\SachTheoChuDe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
