@@ -1,0 +1,14 @@
+﻿@using WeSiteBanSach.Models;
+@*Định nghĩa biến model*@
+@model List<NhaXuatBan>
+
+
+
+<h1>Nhà xuất bản</h1>
+@{
+    foreach (var item in Model)
+    {
+        <div><a href="#">@item.TenNXB</a></div>
+    }
+}
+

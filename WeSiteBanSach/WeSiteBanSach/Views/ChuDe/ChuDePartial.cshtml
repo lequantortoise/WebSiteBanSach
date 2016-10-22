@@ -1,0 +1,11 @@
+﻿@using WeSiteBanSach.Models;
+@*Dinh nghĩa biến cho chủ đề*@
+@model List<ChuDe>
+
+@{
+    foreach (var item in Model)
+    {
+        <a id="btnChuDe" style="width: 250px; font-size: 11pt; color: aliceblue; background-color:#8855bd; text-decoration: none" href="@Url.Action("SachTheoChuDe", new { @machude=item.MaChuDe})" class="button button-submit">@item.TenChuDe</a>
+    }
+        <a id="btnChuDe" style="width: 250px; font-size: 11pt; color: aliceblue; background-color:#8855bd; text-decoration: none" href="#" class="button button-submit">Chủ đề khác</a>
+}

@@ -1,0 +1,25 @@
+﻿@using WeSiteBanSach.Models;
+@*Dinh nghia bien cua sach*@
+@model List<Sach>
+
+<a href="#" class="item-header">Sách hay</a>
+
+@{ foreach (var item in Model)
+    {
+        @*Láy thông tin các cuốn sách từ dữ liệu*@
+        <div class="activity-list-update">
+            <img src="@Url.Content("~/HinhAnhSP/"+ item.AnhBia)" width="50" height="60" alt="Image">
+            <p><strong>@item.TenSach</strong> <br/> <a href=@Url.Action("XemChiTiet",new { @masach = item.MaSach})>xem chi tiết</a></p>
+            <div class="clear"></div>
+        </div>
+
+
+    }
+}
+
+
+
+
+<a href="#" class="item-footer green">
+    Sách mới
+</a>
