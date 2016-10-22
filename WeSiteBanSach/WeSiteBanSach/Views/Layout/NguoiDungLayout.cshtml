@@ -71,7 +71,7 @@
         <section>
             <div id="divMenuLeft">
                 <div class="activity">
-                    @Html.Action("SachMoiPartial", "Home")
+                    @Html.Action("SachMoiPartial", "Sach")
                 </div>
             </div>
             @*Chèn div nivo slider*@
@@ -88,11 +88,9 @@
             @RenderBody()
         </div>
         <section>
-            <div>
-                <a href="#" class="button">Tình yêu - Tình bạn</a>
-                <a href="#" class="button button-submit">Cha mẹ - Con</a>
-                <a href="#" class="button">Công nghệ - Đám mây</a>
-                <a href="#" class="button button-submit">Anime</a>
+            @*Chủ đề*@
+            <div id="divChuDe">
+                @Html.Action("ChuDePartial","ChuDe")
             </div>
         </section>
         @*Div nhà xuất bản*@
