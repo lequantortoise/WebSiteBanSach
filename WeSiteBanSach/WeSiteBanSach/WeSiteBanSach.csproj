@@ -201,6 +201,7 @@
     <Compile Include="Controllers\ChuDeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NhaXuatBanController.cs" />
     <Compile Include="Controllers\SachController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -279,7 +280,15 @@
     <Content Include="Content\Site.css" />
     <Content Include="HinhAnhSP\ABriefHistoryOfTime.jpg" />
     <Content Include="HinhAnhSP\AFareWellToArms.jpg" />
+    <Content Include="HinhAnhSP\CaPhe.jpg" />
+    <Content Include="HinhAnhSP\CoBe.jpg" />
+    <Content Include="HinhAnhSP\Conmua.jpg" />
     <Content Include="HinhAnhSP\CPlusPlus.jpg" />
+    <Content Include="HinhAnhSP\HoangDa.jpg" />
+    <Content Include="HinhAnhSP\King.jpg" />
+    <Content Include="HinhAnhSP\NgayMai.jpg" />
+    <Content Include="HinhAnhSP\NgoaiPho.jpg" />
+    <Content Include="HinhAnhSP\tải xuống.jpg" />
     <Content Include="Models\QuanLyBanSachModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QuanLyBanSachModel.edmx</DependentUpon>
@@ -391,6 +400,7 @@
     <Content Include="Views\Layout\NguoiDungLayout.cshtml" />
     <Content Include="Views\Sach\SachMoiPartial.cshtml" />
     <Content Include="Views\ChuDe\ChuDePartial.cshtml" />
+    <Content Include="Views\NhaXuatBan\NhaXuatBanPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
